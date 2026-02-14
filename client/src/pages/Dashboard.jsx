@@ -9,8 +9,9 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/dashboard');
+                const res = await axios.get('/api/dashboard');
                 setMessage(res.data.message);
+
             } catch (error) {
                 console.error('Error details:', error.response || error);
                 setMessage('Error fetching data');

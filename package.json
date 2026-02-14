@@ -1,0 +1,19 @@
+{
+  "name": "exp-1.3.3",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full stack application with React client and Express server",
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
+    "build": "npm run build -w client && npm run build -w server",
+    "start": "npm start -w server",
+    "lint": "npm run lint -w client"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

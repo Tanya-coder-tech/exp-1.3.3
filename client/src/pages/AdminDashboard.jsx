@@ -9,8 +9,9 @@ const AdminDashboard = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/admin');
+                const res = await axios.get('/api/admin');
                 setMessage(res.data.message);
+
             } catch (error) {
                 console.error('Error details:', error.response || error);
                 setMessage('Error fetching data');
