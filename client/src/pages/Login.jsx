@@ -47,6 +47,20 @@ const Login = () => {
                 </div>
                 <button type="submit" style={{ width: '100%', padding: '0.5rem', background: '#007bff', color: '#fff', border: 'none' }}>Login</button>
             </form>
+            
+            <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#f8f9fa', borderRadius: '5px', fontSize: '0.9rem', color: '#333' }}>
+                <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', borderBottom: '1px solid #ddd', paddingBottom: '0.25rem' }}>Demo Credentials (For Teacher):</p>
+                <div style={{ marginBottom: '0.75rem' }}>
+                    <strong style={{ color: '#d63384' }}>Admin User:</strong><br/>
+                    Email: <code>admin@test.com</code><br/>
+                    Password: <code>password123</code>
+                </div>
+                <div>
+                    <strong style={{ color: '#0d6efd' }}>Regular User:</strong><br/>
+                    Email: <code>user@test.com</code><br/>
+                    Password: <code>password123</code>
+                </div>
+            </div>
         </div>
     );
 };
